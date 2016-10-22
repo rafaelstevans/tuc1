@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.fabricadeprogramador.tuc.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="39dp"
+        android:id="@+id/cod_Barras"
+        android:layout_below="@+id/txt_Insira"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira o Código de Barras"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_Insira" />
+
+    <Button
+        android:text="Confere Preço"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:id="@+id/btn_conf"
+        android:layout_below="@+id/cod_Barras"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Produto:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_conf"
+        android:layout_toLeftOf="@+id/btn_conf"
+        android:layout_toStartOf="@+id/btn_conf"
+        android:layout_marginTop="85dp"
+        android:id="@+id/txt_Produto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produto"
+        android:layout_alignTop="@+id/txt_Produto"
+        android:layout_alignRight="@+id/cod_Barras"
+        android:layout_alignEnd="@+id/cod_Barras"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:id="@+id/desc_produto" />
+
+    <TextView
+        android:text="Preço:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_Produto"
+        android:layout_alignLeft="@+id/txt_Produto"
+        android:layout_alignStart="@+id/txt_Produto"
+        android:layout_marginTop="29dp"
+        android:id="@+id/txt_Preco" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço"
+        android:layout_alignBottom="@+id/txt_Preco"
+        android:layout_alignRight="@+id/cod_Barras"
+        android:layout_alignEnd="@+id/cod_Barras"
+        android:id="@+id/preco_Produto" />
+</RelativeLayout>
